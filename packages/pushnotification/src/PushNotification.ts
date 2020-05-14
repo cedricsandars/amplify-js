@@ -241,12 +241,12 @@ export default class PushNotification {
 					? message.data.pinpoint.campaign
 					: null;
 		} else if (Platform.OS === 'android') {
-			const data = rawMessage;
-			campaign = {
-				campaign_id: data['pinpoint.campaign.campaign_id'],
-				campaign_activity_id: data['pinpoint.campaign.campaign_activity_id'],
-				treatment_id: data['pinpoint.campaign.treatment_id'],
-			};
+			//const data = rawMessage;
+			//campaign = {
+			//	campaign_id: data['pinpoint.campaign.campaign_id'],
+			//	campaign_activity_id: data['pinpoint.campaign.campaign_activity_id'],
+			//	treatment_id: data['pinpoint.campaign.treatment_id'],
+			//};
 		}
 
 		if (!campaign) {
